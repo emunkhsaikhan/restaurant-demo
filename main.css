@@ -236,20 +236,23 @@ button:hover {
     align-items: center;
     gap: 30px;
 }
-.magazine .box-container {
+.magazine .box_container {
     width: 40%;
     height: 30vh;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    object-fit: contain;
-    overflow: hidden;
     background: rgba(27, 25, 25, .9);
     border: var(--lightBg) 1px solid;
 }
-.magazine .box-container .content {
-    width: 90%;
-    height: 90%;
-    margin-left: 5%;
+.magazine .box_container .content {
+    width: 100%;
+    position: absolute;
+    margin-left: -100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
