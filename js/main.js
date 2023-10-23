@@ -1,8 +1,8 @@
 document.addEventListener('scroll', () => {
-    const navbar = document.querySelector('navbar');
-    if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 200) {
+        navbar.style.background = 'rgb(27, 25, 25)';
     } else {
-        navbar.classList.remove('scrolled');
+        navbar.style.background = 'transparent';
     }
 })
