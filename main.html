@@ -127,23 +127,38 @@
                 <div class="form-field-2col">
                     <div class="form-field-wrapper">
                         <label for="fname" class="field-label">First name</label>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" class="field-input">
                     </div>
                     <div class="form-field-wrapper">
                         <label for="lname" class="field-label">Last name</label>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lname" id="lname" class="field-input">
                     </div>   
                 </div>
                 <div class="form-field-2col">
                     <div class="form-field-wrapper">
                         <label for="e-mail" class="field-label">E-Mail</label>
-                        <input type="email" name="e-mail" id="e-mail">
+                        <input type="email" name="e-mail" id="e-mail" class="field-input">
                     </div>
                     <div class="form-field-wrapper">
                         <label for="p-number" class="field-label">Phone number</label>
-                        <input type="tel" name="p-number" id="p-number">
+                        <input type="tel" name="p-number" id="p-number" class="field-input">
                     </div>
                 </div>
+                <div class="question-type form-field-wrapper">
+                    <label for="questions">Choose a topic</label>
+                    <select name="questions" id="questions" class="options">
+                        <option value="placeholder">What is on your mind?</option>
+                        <option value="group reservation">Group reservation?</option>
+                        <option value="menu">About menu</option>
+                        <option value="general">General question</option>
+                        <option value="working">Working at Fasto Fatso?</option>
+                    </select>
+                </div>
+                <div class="message-box">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Share your thoughts with us :)"></textarea>
+                </div>
+                <input type="submit" id="form-submit">
             </form>
             <div class="contact-content">
                 <div class="info-icon">
@@ -168,6 +183,7 @@
                 </div>
             </div>
         </footer>
+
 
         <script src="js/main.js"></script>
     </section>
